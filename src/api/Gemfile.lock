@@ -280,7 +280,7 @@ GEM
       byebug (~> 11.0)
       pry (~> 0.10)
     public_suffix (4.0.1)
-    puma (4.2.1)
+    puma (4.3.3)
       nio4r (~> 2.0)
     pundit (2.1.0)
       activesupport (>= 3.0.0)
@@ -520,7 +520,7 @@ DEPENDENCIES
   peek-mysql2
   pry (>= 0.9.12)
   pry-byebug
-  puma (~> 4.0)
+  puma (~> 4.3, >= 4.3.3)
   pundit
   rails (~> 5.2)
   rails-assets-airbrake-js-client!
@@ -560,4 +560,4 @@ DEPENDENCIES
   yajl-ruby
 
 BUNDLED WITH
-   1.17.1
+   1.17.3

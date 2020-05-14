@@ -2,7 +2,7 @@
 # This preamble is the current preamble for Rails 3 apps; edit as needed.
 source 'https://rubygems.org'
 
-gem 'rails', '~> 5.2'
+gem 'rails', '~> 5.2', '>= 5.2.3'
 
 # as our database
 gem 'mysql2'
@@ -22,7 +22,7 @@ gem 'kaminari'
 # for abstract HTML
 gem 'haml'
 # streamline HAML's integration in Rails
-gem 'haml-rails'
+gem 'haml-rails', '>= 2.0.1'
 # to avoid tilt downgrade
 gem 'tilt', '>= 1.4.1'
 # to use markdown in the comment system
@@ -42,19 +42,19 @@ gem 'pundit'
 # for password hashing
 gem 'bcrypt'
 #
-gem 'responders', '~> 3.0'
+gem 'responders', '~> 3.0', '>= 3.0.0'
 # for threaded comments
 gem 'acts_as_tree'
 # js plotting (OBS monitor)
-gem 'flot-rails'
+gem 'flot-rails', '>= 0.0.7'
 # colorize for scripts
 gem 'colorize', require: false
 # XML Serialization got moved here
 gem 'activemodel-serializers-xml'
 # Spider Identification
-gem 'voight_kampff'
+gem 'voight_kampff', '>= 1.1.3'
 # support coffeescript
-gem 'coffee-rails'
+gem 'coffee-rails', '>= 5.0.0'
 # bind keyboard shortcuts to actions
 gem 'mousetrap-rails'
 # for issue tracker communication
@@ -63,16 +63,16 @@ gem 'xmlrpc'
 gem 'flipper'
 gem 'flipper-active_record'
 # for profiling
-gem 'peek'
-gem 'peek-dalli'
-gem 'peek-host'
-gem 'peek-mysql2'
+gem 'peek', '>= 1.1.0'
+gem 'peek-dalli', '>= 1.2.0'
+gem 'peek-host', '>= 1.0.0'
+gem 'peek-mysql2', '>= 1.2.0'
 # for kerberos authentication
 gem 'gssapi', require: false
 # for sending events to rabbitmq
 gem 'bunny'
 # for making changes to existing data
-gem 'data_migrate'
+gem 'data_migrate', '>= 6.0.5'
 # for URI encoding
 gem 'addressable'
 # for XML builder
@@ -80,11 +80,11 @@ gem 'builder'
 # to write the rails metrics directly into InfluxDB.
 gem 'influxdb-rails', '1.0.0'
 # for client side time ago
-gem 'rails-timeago', '~> 2.0'
+gem 'rails-timeago', '~> 2.17', '>= 2.17.1'
 # for copying objects with their relations
 gem 'deep_cloneable', '~> 3.0.0'
 # Server-side datatables
-gem 'ajax-datatables-rails'
+gem 'ajax-datatables-rails', '>= 1.0.0'
 # Add syntax highlight in ruby
 gem 'coderay'
 
@@ -100,7 +100,7 @@ group :development, :production do
   # as interface to LDAP
   gem 'ruby-ldap', require: false
   # to have better logs
-  gem 'lograge'
+  gem 'lograge', '>= 0.11.2'
 end
 
 group :production do
@@ -125,9 +125,9 @@ group :test do
   # for spec like reporting
   gem 'minitest-reporters'
   # for integration testing
-  gem 'capybara'
+  gem 'capybara', '>= 3.29.0'
   # for rspec like matchers
-  gem 'capybara_minitest_spec'
+  gem 'capybara_minitest_spec', '>= 1.0.7'
   # to freeze time
   gem 'timecop'
   # to fake backend replies
@@ -137,7 +137,7 @@ group :test do
   # for testing common Rails functionality with simple one-liners
   gem 'shoulda-matchers', '~> 4.0'
   # assigns has been extracted to a gem
-  gem 'rails-controller-testing'
+  gem 'rails-controller-testing', '>= 1.0.4'
   # To generate random data
   gem 'rantly'
   # for test analysis in CircleCI
@@ -151,9 +151,9 @@ end
 group :development, :test do
   gem 'rspec'
   # as testing framework
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.9.0'
   # for fixtures
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 5.1.1'
   # for mocking the backend
   gem 'vcr'
   # as alternative to the standard IRB shell
@@ -163,7 +163,7 @@ group :development, :test do
   # for style checks
   gem 'rubocop', require: false
   # for rails style checks
-  gem 'rubocop-rails', require: false
+  gem 'rubocop-rails', '>= 2.3.2', require: false
   # for rspec style checks
   gem 'rubocop-rspec', require: false
   # for performance checks
@@ -193,27 +193,27 @@ group :assets do
   # sassc 2.2.0 is throwing exception
   gem 'sassc', '~> 2.1.0'
   # to use sass in the asset pipeline
-  gem 'sassc-rails'
+  gem 'sassc-rails', '>= 2.1.2'
   # assets for jQuery DataTables
   gem 'jquery-datatables'
   # assets for the text editor
-  gem 'codemirror-rails'
+  gem 'codemirror-rails', '>= 5.16.0'
   # assets for jQuery tokeninput
-  gem 'rails_tokeninput', '>= 1.6.1.rc1'
+  gem 'rails_tokeninput', '>= 1.7.0'
   # to create our sprite images/stylesheets
   gem 'sprite-factory', '>= 1.5.2'
   # to read and write PNG images
   gem 'chunky_png'
   # assets for jQuery and jQuery-ujs
-  gem 'jquery-rails'
+  gem 'jquery-rails', '>= 4.3.5'
   # assets for jQuery-ui
   gem 'jquery-ui-rails', '~> 4.2.1'
   # assets for the bootstrap front-end framework
-  gem 'bootstrap'
+  gem 'bootstrap', '>= 4.3.1'
   # assets for font-awesome vector icons
   gem 'font-awesome-sass'
   # assets for formatting dates
-  gem 'momentjs-rails'
+  gem 'momentjs-rails', '>= 2.20.1'
   # for catching javascript exceptions
   source 'https://rails-assets.org' do
     gem 'rails-assets-airbrake-js-client'

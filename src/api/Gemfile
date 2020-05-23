@@ -179,7 +179,7 @@ group :development, :test do
   # to find n+1 queries
   gem 'bullet'
   # Use Puma as the app server (rails 5 default)
-  gem 'puma', '~> 4.0'
+  gem 'puma', '~> 4.3', '>= 4.3.5'
   # to drive headless chrome
   gem 'selenium-webdriver'
 end

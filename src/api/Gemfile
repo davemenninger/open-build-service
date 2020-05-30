@@ -18,7 +18,7 @@ gem 'yajl-ruby', require: 'yajl/json_gem'
 # to search the database
 gem 'thinking-sphinx', '> 3.1'
 # to paginate search results
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 # for abstract HTML
 gem 'haml'
 # streamline HAML's integration in Rails
